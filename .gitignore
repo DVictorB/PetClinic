@@ -1,0 +1,46 @@
+# Ignore archivos de compilación y archivos generados
+target/
+bin/
+*.class
+
+# Ignore archivos de configuración específicos de tu entorno local
+application.properties
+application.yml
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore archivos de dependencias de Maven
+# Si usas Gradle, cambia "target" por "build"
+*.jar
+
+# Ignore archivos de IDE (ejemplo, para Eclipse o IntelliJ)
+# Si trabajas con otros IDEs, añádelos aquí también
+.metadata/
+.idea/
+
+# Ignore archivos temporales
+*.tmp
+
+# Ignore archivos ocultos de Unix
+.*.swp
+
+# Ignore archivos de caché
+*.cache
+
+# Si usas Lombok, evita subir archivos generados por Lombok
+# https://projectlombok.org/setup/maven
+target/
+!target/generated-sources/
+target/generated-sources/delombok/
+
+# Si usas el empaquetado Spring Boot JAR
+*.jar.original
+
+# Si usas el empaquetado Spring Boot WAR
+*.war
+
+# Si usas Eclipse con m2e, descomenta el siguiente archivo para evitar
+# almacenar preferencias del IDE junto al código fuente
+# /.settings/
